@@ -1,0 +1,13 @@
+# PaperKernel Kconfig
+
+config PAPER_KERNEL_IRQ_DEBUG
+	tristate "qcom kernel irq debug"
+	default y
+	---help---
+	  If you are not sure, please keep the default.
+
+config PAPER_KERNEL_PANEL_SLEEP_MIN
+	tristate "mdss_fb0_auto_sleep changes"
+	default n
+	---help---
+	  If you are not sure, please keep the default.

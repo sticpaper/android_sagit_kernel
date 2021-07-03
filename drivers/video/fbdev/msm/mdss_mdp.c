@@ -61,12 +61,21 @@
 #include "mdss_mdp_trace.h"
 
 #define AXI_HALT_TIMEOUT_US	0x4000
-#define AUTOSUSPEND_TIMEOUT_MS	200
 #define DEFAULT_MDP_PIPE_WIDTH	2048
 #define RES_1080p		(1088*1920)
 #define RES_UHD			(3840*2160)
 
 #define MDP_DEVICE_ID		0x1A
+
+#ifdef CONFIG_PAPER_KERNEL_PANEL_SLEEP_MIN
+#define AUTOSUSPEND_TIMEOUT_MS	60
+#else
+#define AUTOSUSPEND_TIMEOUT_MS	200
+#endif
+
+#ifdef CONFIG_PAPER_KERNEL_DEBUG
+#define AUTOSUSPEND_TIMEOUT_MS	100
+#endif
 
 struct mdss_data_type *mdss_res;
 static u32 mem_protect_sd_ctrl_id;
