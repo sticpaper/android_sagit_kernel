@@ -375,7 +375,6 @@ CONFIG_GPIOLIB=y
 CONFIG_GPIO_SYSFS=y
 CONFIG_GPIO_QPNP_PIN=y
 CONFIG_POWER_RESET_QCOM=y
-CONFIG_QCOM_PRESERVE_MEM=y
 CONFIG_POWER_RESET_XGENE=y
 CONFIG_POWER_RESET_SYSCON=y
 CONFIG_QPNP_FG_GEN3=y
@@ -681,36 +680,19 @@ CONFIG_CRYPTO_AES_ARM64_CE_BLK=y
 CONFIG_CRYPTO_AES_ARM64_NEON_BLK=y
 CONFIG_CRYPTO_CRC32_ARM64=y
 CONFIG_QMI_ENCDEC=y
-
-## SELinux 审核部分 ##
 # CONFIG_AUDIT is not set
 # CONFIG_AUDITSYSCALL is not set
-
-## 启用 github 与 gerrit 提交哈希值 支持 ##
 CONFIG_LOCALVERSION=""
 CONFIG_LOCALVERSION_AUTO=y
-
-## NTFS FileSystem 文件系统支持 ##
 CONFIG_NTFS_FS=y
 CONFIG_NTFS_RW=y
 # CONFIG_NTFS_DEBUG is not set
-
-## 禁用魔法鼠标 ##
 # CONFIG_HID_MAGICMOUSE is not set
-
-## 禁用内核模块支持 ##
 # CONFIG_MODULES is not set
-
-## 禁用网络CTS测试 ##
 # CONFIG_UTS_NS is not set
-
-## 禁用未使用的Ramdisk后端 ##
 # CONFIG_RD_BZIP2 is not set
 # CONFIG_RD_LZMA is not set
-
-## 禁用编译信息 vmlinux.o && out 输出文件太大 禁用 ##
 # CONFIG_DEBUG_INFO is not set
-
-## Paper 内核 杂项 支持 ##
 # CONFIG_PAPER_KERNEL_IRQ_DEBUG is not set
 CONFIG_PAPER_KERNEL_PANEL_SLEEP_MIN=y
+# CONFIG_QCOM_PRESERVE_MEM is not set
